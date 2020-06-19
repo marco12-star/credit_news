@@ -51,6 +51,9 @@ li{
 .navbar li{
 	margin: 0;
 }
+.dropdown-menu{
+	border: none;
+}
 
 a{
 	padding: 15px 0;
