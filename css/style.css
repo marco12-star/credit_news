@@ -1,4 +1,3 @@
-
 body{
 	font-family: 'Rubik', sans-serif;
 	color: #8AC44B;
@@ -29,13 +28,13 @@ li{
 	display: none;
 }
 
-.navbar-light .navbar-nav .nav-link{
+.navbar-light .navbar-toggler{
+	border: none;
 	color: #8AC44B;
 }
 
-.navbar-light .navbar-toggler{
+.navbar-light .navbar-nav .nav-link{
 	color: #8AC44B;
-	border: none;
 }
 
 .navbar{
@@ -127,7 +126,7 @@ a:not([href]):not([tabindex]){
 }
 .dws-menu li:hover > ul{
  display: block;
- z-index: 9999;
+ z-index: 999;
 }
 
 
@@ -135,6 +134,8 @@ a:not([href]):not([tabindex]){
 /* DESK NAV END */
 
 /* HEADER END */
+
+
 
 /* .banner {
     background: url(../img/banner.png) 0 0/cover no-repeat;
@@ -144,6 +145,13 @@ a:not([href]):not([tabindex]){
 .credit__info_title{
 	margin-bottom: 30px;
 	font-weight: 700;
+}
+
+.credit__info{
+	margin: 50px auto;
+	padding: 1em 3em;
+	color: #000;
+	background: rgba(156, 156, 156, .1);
 }
 
 .credit__items{
@@ -156,50 +164,56 @@ a:not([href]):not([tabindex]){
 .credit__title{
 	font-size: 24px;
 	font-weight: 700;
-	color: #8AC44B;
+	color: #000;
 }
 
 .credit__info_title{
-	font-size: 24px;
 	padding-top: 2em;
 	color: #000;
 }
 
-.credit__text{
-	font-weight: 700;
-}
-
 .offers_desk .credit__title{
 	color: #8AC44B;
-	font-size: 18px;
-	padding-bottom: 15px;
+	font-size: 20px;
 }
 
-.offers_desk a{
-	color: #000;
-	text-decoration-color: #000;
-	font-weight: 400;
+.credit__links{
+	margin: 0 auto;
+	padding-bottom: 30px;
+	-webkit-box-shadow: 0px 6px 11px -10px rgba(0,0,0,0.43);
+    -moz-box-shadow: 0px 6px 11px -10px rgba(0,0,0,0.43);
+    box-shadow: 0px 6px 11px -10px rgba(0,0,0,0.43)
+}
+
+.credit__link{
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+}
+
+.mobile_link{
+	display: none;
+}
+
+.credit__link a {
+    padding: 15px 0;
+    white-space: nowrap;
 }
 
 .btn-success{
-	padding: 1em 4em;
+	padding: 15px 0;
 	background: #8AC44B;
 	border:none;
 	border-radius: initial;
 }
 
-.offers__content{
-	background: rgba(153, 153, 153, .1);
-	margin-bottom: 5em;
-	padding: 1em 2em;
-}
-
-.offers__content p{
-	font-size: 16px;
-}
-
 .offers__item {
 	padding: 1em;
+    -webkit-box-shadow: 0px 6px 11px -10px rgba(0,0,0,0.43);
+    -moz-box-shadow: 0px 6px 11px -10px rgba(0,0,0,0.43);
+    box-shadow: 0px 6px 11px -10px rgba(0,0,0,0.43);
 }
 
 .offers__item_img{
@@ -228,16 +242,8 @@ a:not([href]):not([tabindex]){
 	background: url(../img/o1.png) 0 100%/cover no-repeat;
 }
 
-.offers__item_text .offers__info_row img{
+.offers__item_info .offers__info_row img{
 	opacity: .5;
-}
-
-.offers__info{
-	color: #000;
-}
-
-.offers__info img{
-	padding-right: 15px;
 }
 
 .offers__item_info span{
@@ -245,10 +251,8 @@ a:not([href]):not([tabindex]){
 	color: #8AC44B;
 }
 
-.offers__item_btn{
-	-webkit-box-shadow: 0px 6px 16px -10px rgba(0,0,0,0.43);
-    -moz-box-shadow: 0px 6px 16px -10px rgba(0,0,0,0.43);
-    box-shadow: 0px 6px 16px -10px rgba(0,0,0,0.43);
+.offers__item_info .criterion{
+	color: #000;
 }
 
 .offers__item_btn p{
@@ -256,17 +260,24 @@ a:not([href]):not([tabindex]){
 	color: #000;
 }
 
-.value{
-	color: #8AC44B;
+
+.offer__circle a{
+	padding: 0;
+	font-size: 16px;
+	color: #000;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	-ms-align-items: center;
+	align-items: center;
 }
 
-.offer__circle{
-	width: 10px;
-	height: 10px;
-	border-radius: 50%;
-	background: #8AC44B;
+.offer__circle a img{
+	height: 25px;
+	width: 30px;
 }
-
 .offers{
 	padding: 2em 0;
 	display: none;
@@ -322,26 +333,18 @@ a:not([href]):not([tabindex]){
 	font-size: 18px;
 }
 
-.offers__info{
-	white-space: nowrap;
-}
-
 .offers__info_row{
 	margin: 1em 0;
 	color: #000;
-	font-size: 18px;
+	font-size: 14px;
 }
 
 .offers__info_row img{
 	padding-right: 5px;
 }
 
-.credit__address{
-	opacity: .7;
-}
-
 .btn-dark{
-	padding: 15px 85px;
+	padding: 15px 0;
 	background: transparent;
 	border: 1px solid #8AC44B;
 	color: #000;
@@ -497,25 +500,12 @@ ul li {
 
 .info__text{
 	margin: 0 auto;
+	padding: 1em 3em;
+	background: rgba(156, 156, 156, .1);
 	color: #000;
 	font-size: 16px;
 }
 
-.info__text h6{
-	padding: 1em 0;
-}
-
-.info__text p span{
-	color: #8AC44B;
-}
-
-.offers__info_mob{
-	display: none;
-}
-
-.article__item{
-	color: #000;
-}
 
 .footer{
 	padding: 3em 0;
@@ -526,6 +516,7 @@ ul li {
 
 
 .footer a{
+	padding: 10px 0;
 	color: #fff;
 	text-decoration-color: #fff;
 	white-space: nowrap;
@@ -542,5 +533,5 @@ ul li {
 }
 
 .footer .footer__nav ul li{
-	margin: 10px 0;
+	margin-bottom: 10px;
 }
