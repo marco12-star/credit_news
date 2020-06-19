@@ -40,6 +40,12 @@ li{
 .navbar{
 	padding: 1.5rem 0;
 }
+[type="button"], [type="reset"], [type="submit"], button {
+    -webkit-appearance: none;
+}
+.btn i{
+	padding-left: 5px;
+}
 
 a{
 	padding: 15px 0;
