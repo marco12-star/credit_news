@@ -430,3 +430,7 @@ ul li {
   width: 212px;
 }
 
+[type=button], [type=reset], [type=submit], button {
+    -webkit-appearance: none;
+}
+
