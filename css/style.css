@@ -37,6 +37,11 @@ li{
 	padding: 1.5rem 0;
 }
 
+.navbar img{
+	width: 212px;
+	height: 33px;
+}
+
 .navbar a{
   white-space: nowrap;
 }
